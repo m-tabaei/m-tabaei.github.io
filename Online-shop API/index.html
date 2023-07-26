@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Digikala</title>
+    <link rel="stylesheet" href="./node_modules/fontawesome-4.7/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<section id="menuHeader">
+    <header>
+        <img src="images/gif/9bfe5c07b7ce5758c154d6e1714a91ee3f89cb68_1665405649.gif" alt="header">
+    </header>
+    <input type="radio" id="openMenu" name="menu">
+    <input type="radio" id="closeMenu" name="menu">
+    <section class="menuPart1">
+        <div class="logo">
+            <label for="openMenu">
+                <div class="hamburger" >
+                <div class="users ">
+                    <!-- <i class="fa fa-user-o karim" aria-hidden="true"></i> -->
+                    <i class="fa fa-toggle-off karim" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="cover">
+                    <div class="menuLeft" id="menutoggle">
+
+                    </div>
+                  </div>
+                  </div>
+                
+               
+                <!-- 
+                    <div></div>
+                <div></div>
+                <div></div> -->
+        
+        </label>
+            <img src="images/logo/logo.svg" alt="logo">
+        </div>
+       
+        <div class="search">
+            <form action="#" method="get">
+                <label>
+                    <input type="search" name="search" placeholder="جستجو">
+                </label>
+            </form>
+            <button class="btn-login2"><a href="#">ورود</a></button>
+        </div>
+        <div class="modal">
+            <div class="login">
+                <div class="close"><i class="fa fa-times" aria-hidden="true"></i></div>
+            </div>
+        </div>
+        <div class="modal">
+            <div class="login">
+                <div class="close"><i class="fa fa-times" aria-hidden="true"></i></div>
+            </div>
+        </div>
+        <button class="btn-login1"><a href="#">ورود | ثبت نام</a></button>
+    </section>
+    <section class="menuPart2" id="menuapi">
+        <label for="closeMenu">X</label>
+        <nav>
+            <ul>
+                <li>دسته بندی کالا ها</li>
+                <li>سوپر مارکت</li>
+                <li>پرفروش ترین ها</li>
+                <li>تخفیف ها و پیشنهادات</li>
+                <li>شگفت انگیز ها</li>
+                <li>سوالی دارید؟</li>
+                <li>فروشنده شوید!</li>
+            </ul>
+        </nav>
+        <button>لطفا شهر خود را انتخاب کنید</button>
+    </section>
+    <button class="btn-city">لطفا شهر خود را انتخاب کنید</button>
+</section>
+<section id="silder1">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide root1"></div>
+          <div class="swiper-slide root2"></div>
+          <div class="swiper-slide root3"></div>
+      
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+</section>
+<script src="./js/togglemenu.js"></script>
+<script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+<script src="./js/modal.js"></script>
+<script src="./js/slider.js"></script>
+<!-- <script src="./api/db.json"></script> -->
+<script src="./js/main.js" type="module"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+</body>
+</html>

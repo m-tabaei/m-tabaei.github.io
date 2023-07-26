@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "IranYekan Regular";
+    src: url("../fonts/IranYekan/ttf/IRANYekanRegularFaNum.ttf");
+    src: url("../fonts/IranYekan/eot/iranyekanwebregularfanum.eot");
+}
+@font-face {
+    font-family: "IranYekan Bold";
+    src: url("../fonts/IranYekan/ttf/IRANYekanBoldFaNum.ttf");
+    src: url("../fonts/IranYekan/eot/iranyekanwebboldfanum.eot");
+}

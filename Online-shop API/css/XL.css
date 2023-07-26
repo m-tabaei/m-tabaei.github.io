@@ -1,0 +1,333 @@
+section#menuHeader {
+  width: 100%;
+}
+
+section#menuHeader > header {
+  width: 100%;
+  height: 60px;
+}
+
+section#menuHeader > header > img {
+  width: 100%;
+  height: 100%;
+}
+
+section#menuHeader > section.menuPart1 {
+  width: 100%;
+  height: 60px;
+  padding: 8px 16px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+section#menuHeader > section.menuPart1 > div.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 24px;
+}
+
+section#menuHeader > section.menuPart1 > div.logo > img {
+}
+
+section#menuHeader > section.menuPart1 > div.search {
+  width: 600px;
+  height: 100%;
+}
+
+section#menuHeader > section.menuPart1 > div.search > form {
+  width: 100%;
+  height: 100%;
+}
+
+section#menuHeader > section.menuPart1 > div.search > form > label {
+  width: 100%;
+  height: 100%;
+}
+
+section#menuHeader > section.menuPart1 > div.search > form > label > input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: #d7dee8;
+  border-radius: 10px;
+  padding: 0 16px;
+  font: 16px/40px "IranYekan Regular";
+}
+
+section#menuHeader > section.menuPart1 > button.btn-login1 {
+  width: 135px;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 20%);
+  border-radius: 8px;
+  margin-right: auto;
+}
+
+section#menuHeader > section.menuPart1 > button.btn-login1 > a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  color: #0c0c0c;
+  font: 16px/40px "IranYekan Regular";
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-login2 {
+  display: none;
+}
+
+/* section#menuHeader > section.menuPart2 {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0 16px;
+} */
+
+/* section#menuHeader > section.menuPart2 > nav {
+    width: 80%;
+}
+
+section#menuHeader > section.menuPart2 > nav > ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+section#menuHeader > section.menuPart2 > nav > ul > li:nth-of-type(1) {
+    font: 14px "IranYekan Bold";
+}
+
+section#menuHeader > section.menuPart2 > nav > ul > li {
+    font: 14px "IranYekan Regular";
+    transition: all 300ms linear;
+}
+
+section#menuHeader > section.menuPart2 > nav > ul > li:hover {
+    border-bottom: 2px solid crimson;
+} */
+
+section#menuHeader > section.menuPart2 > button {
+  border: none;
+  background-color: transparent;
+  margin-right: auto;
+  font: 14px "IranYekan Regular";
+}
+
+section#menuHeader > section.menuPart2 > label {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+#openMenu,
+#closeMenu {
+  display: none;
+}
+section#menuHeader > button.btn-city {
+  display: none;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.swiper-slide {
+  width: 50%;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* *********************************  Menu Api */
+
+div.menu {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 0 16px;
+}
+div.menu > nav {
+  width: 80%;
+  /* background-color: aqua; */
+}
+div.menu > nav > ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  color: #2b2b2b;
+}
+div.menu > nav > ul > li {
+  font: 14px "IranYekan Regular";
+  transition: all 300ms linear;
+}
+div.menu > nav > ul > li > a {
+  display: block;
+  width: auto;
+  padding: 0 10px;
+  line-height: 40px;
+  color: #2b2b2b;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: all 300ms linear;
+}
+div.menu > nav > ul > li > a:hover {
+  border-bottom: 2px solid crimson;
+}
+
+/* **************************** End Menu */
+
+/* ******************************* Modal */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.fadeOut {
+  animation-name: fadeOut;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+}
+div.modal {
+  width: 100%;
+  height: 100vh;
+  background-color: whitesmoke;
+    opacity: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  transition: 200ms;
+  
+  z-index: 999;
+}
+.show {
+  display: block !important;
+}
+
+div.modal > div.login {
+  width: 500px;
+  height: 300px;
+  background-color: gainsboro;
+  position: absolute;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+div.modal > div.login > div.close {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: -25px;
+  top: -25px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+div.modal > div.login > div.close>i {
+    font-size: 40px;
+   }
+
+/* ********************************* End Modal */
+
+
+/* ************************************ Toggle Menu */ 
+
+
+
+div.menu {
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    padding-left: 50px;
+    padding-top: 5px;
+    position: relative;
+  }
+  div.logo > div.users {
+    width: 50px;
+    height: 50px;
+  }
+  
+  div.logo > div.users > i {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  div.logo>div.cover{
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(128, 128, 128, 0.459);
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      z-index: -1;
+      backdrop-filter: blure(5px);
+      transition: all 300ms linear;
+  }
+  .coverShow{
+      opacity: 1 !important;
+      transition: all 300ms linear;
+      z-index: 1;
+  }
+  div.menuLeft {
+    width: 300px;
+    height: 100vh;
+    background-color: lightgray;
+    left: -300px;
+    top: 0;
+    position: absolute;
+    transition: all 300ms linear;
+    backdrop-filter: blure(5px);
+  
+  }
+  .Left {
+    left: 0 !important;
+    transition: all 300ms linear;
+  }
+  
+/* ************************************ End Toggle Menu */

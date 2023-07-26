@@ -1,0 +1,245 @@
+section#menuHeader {
+    width: 100%;
+}
+
+section#menuHeader > header {
+    width: 100%;
+    height: 60px;
+}
+
+section#menuHeader > header > img {
+    width: 100%;
+    height: 100%;
+}
+
+section#menuHeader > section.menuPart1 {
+    width: 100%;
+    padding: 8px 16px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+section#menuHeader > section.menuPart1 > div.logo {
+    width: 100%;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 24px;
+    margin-bottom: 16px;
+    margin-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 10%);
+    position: relative;
+}
+
+section#menuHeader > section.menuPart1 > div.logo > label {
+    cursor: pointer;
+}
+
+section#menuHeader > section.menuPart1 > div.logo > label > div.hamburger {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right: 8px;
+    top: 0;
+}
+
+section#menuHeader > section.menuPart1 > div.logo > label > div.hamburger > div {
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+section#menuHeader > section.menuPart1 > div.logo > img {
+
+}
+
+section#menuHeader > section.menuPart1 > div.search {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 10%);
+}
+
+section#menuHeader > section.menuPart1 > div.search > form {
+    width: 90%;
+    height: 100%;
+}
+
+section#menuHeader > section.menuPart1 > div.search > form > label {
+    width: 100%;
+    height: 100%;
+}
+
+section#menuHeader > section.menuPart1 > div.search > form > label > input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: #d7dee8;
+    border-radius: 10px;
+    padding: 0 16px;
+    font: 16px/40px "IranYekan Regular";
+}
+
+.swiper {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper-pagination{
+    text-align: right;
+    transform: translateX(-20px);
+}
+.swiper-button-next::after{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    background-color: white;
+    font-size: 12px;
+    color: #0c0c0c;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    line-height: 35px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.swiper-button-prev::after{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    background-color: white;
+    font-size: 12px;
+    color: #0c0c0c;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    line-height: 35px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+
+section#menuHeader > section.menuPart1 > div.search > div.btn-login2 {
+    width: 135px;
+    height: 40px;
+    margin-right: auto;
+}
+
+section#menuHeader > section.menuPart1 > div.search > div.btn-login2 > a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #0c0c0c;
+    font: 16px/40px "IranYekan Regular";
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-login1 {
+    display: none
+}
+section#menuHeader > section.menuPart2 {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 16px;
+    padding-top: 50px;
+    position: absolute;
+    background-color: white;
+    border-left: 1px solid rgba(0,0,0,16%);
+    border-bottom: 1px solid rgba(0,0,0,16%);
+    top: 0;
+    right: -100%;
+    transition: all 300ms linear;
+}
+section#menuHeader > section.menuPart2>label{
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px; cursor: pointer;
+}
+#openMenu:checked~section.menuPart2{
+    right: 0;
+}
+section#menuHeader > section.menuPart2 > nav {
+    width: 80%;
+}
+
+section#menuHeader > section.menuPart2 > nav > ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    list-style: none;
+}
+
+section#menuHeader > section.menuPart2 > nav > ul > li:nth-of-type(1) {
+    font: 14px "IranYekan Bold";
+}
+
+section#menuHeader > section.menuPart2 > nav > ul > li {
+    font: 14px "IranYekan Regular";
+    margin-bottom: 16px;
+}
+
+section#menuHeader > section.menuPart2 > button {
+    display: none;
+    border: none;
+    background-color: transparent;
+    margin-right: auto;
+    font: 14px "IranYekan Regular";
+}
+#openMenu,#closeMenu{
+    display: none;
+}
+section#menuHeader>button.btn-city{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    margin-right: auto;
+    font: 12px "IranYekan Regular";
+    text-align: right;
+    padding: 0 16px;
+}
