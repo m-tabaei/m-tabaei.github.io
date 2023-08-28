@@ -13,12 +13,7 @@
     />
 
     <!----------- SWIPER CSS --------------->
-    <!-- <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" /> -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
-
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
     <!----------- CSS --------------->
     <link rel="stylesheet" href="./css/styles.css" />
 
@@ -142,10 +137,8 @@
         </div>
       </section>
 
-      <!----------- SWIPER Products--------------->
-
-      <!-- <section id="Product">
-        <h2>Products</h2>
+      <!----------- SWIPER --------------->
+      <section id="Product">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide root1"></div>
@@ -156,103 +149,19 @@
           <div class="swiper-button-prev"></div>
           <div class="swiper-pagination"></div>
         </div>
-      </section> -->
-
-      <!----------- swiper js  --------------->
-      <div class="swiper mySwiper" id="Product">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide"><img src="./img/swiper1.jpg" > </div>
-    <div class="swiper-slide"><img src="./img/swiper2.jpg" ></div>
-    <div class="swiper-slide"><img src="./img/swiper3.jpg" ></div>
-
-  </div>
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-</div>
+      </section>
 
       <!----------- PRODUCT --------------->
-      <!-- <section class="place section">
+      <section class="place section">
         <h2 class="sectionTitle">Choose Your Speaker</h2>
         <div id="error-container"></div>
         <div class="place_container container grid"></div>
-      </section> -->
-      <section class="place section" id="Product">
-        <h2 class="sectionTitle">Choose Your Speaker</h2>
+      </section>
 
-        <div class="place_container container grid">
-            <!--==================== PLACES CARD 1 ====================-->
-            <div class="place_card">
-                <img src="./img/place1.jpg" alt="" class="place_img">
-                
-                <div class="place_content">
-                    <span class="place_rating">
-                        <i class="ri-star-line place_rating-icon"></i>
-                        <span class="place_rating-number">lorem</span>
-                    </span>
-
-                    <div class="place_data">
-                        <h3 class="place_title">lorem</h3>
-                        <span class="place_subtitle">lorem</span>
-                        <span class="place_price">$lorem</span>
-                    </div>
-                </div>
-
-                <button class="button button--flex place_button">
-                    <i class="ri-arrow-right-line"></i>
-                </button>
-            </div>
-
-            <!--==================== PLACES CARD 2 ====================-->
-            <div class="place_card">
-                <img src="./img/place2.jpg" alt="" class="place_img">
-                
-                <div class="place_content">
-                    <span class="place_rating">
-                        <i class="ri-star-line place_rating-icon"></i>
-                        <span class="place_rating-number">lorem</span>
-                    </span>
-
-                    <div class="place_data">
-                        <h3 class="place_title">lorem</h3>
-                        <span class="place_subtitle">lorem</span>
-                        <span class="place_price">$lorem</span>
-                    </div>
-                </div>
-
-                <button class="button button--flex place_button">
-                    <i class="ri-arrow-right-line"></i>
-                </button>
-            </div>
-
-            <!--==================== PLACES CARD 3 ====================-->
-            <div class="place_card">
-                <img src="./img/place3.jpg" alt="" class="place_img">
-                
-                <div class="place_content">
-                    <span class="place_rating">
-                        <i class="ri-star-line place_rating-icon"></i>
-                        <span class="place_rating-number">lorem</span>
-                    </span>
-
-                    <div class="place_data">
-                        <h3 class="place_title">lorem</h3>
-                        <span class="place_subtitle">lorem</span>
-                        <span class="place_price">$lorem</span>
-                    </div>
-
-                </div>
-
-                <button class="button button--flex place_button">
-                    <i class="ri-arrow-right-line"></i>
-                </button>
-            </div>
-
-        </div>
-    </section>
       <!----------- EXPERINCE --------------->
       <section class="experience section">
         <h2 class="sectionTitle">
-          Lorem ipsum dolor sit amet consectetur <br />
+          Lorem ipsum dolor sit amet consectetur  <br />
           lorem consectetur consectetur dolor sit amet consec
         </h2>
 
@@ -298,15 +207,19 @@
           </p>
 
           <div class="video_content">
-            <video id="video-file" controls muted>
+            <video id="video-file">
               <source src="./video/video.mp4" type="video/mp4" />
             </video>
+
+            <button class="button button--flex video_button" id="video-button">
+              <i class="ri-play-line video_button-icon" id="video-icon"></i>
+            </button>
           </div>
         </div>
       </section>
 
       <!----------- SUBSCRIBE --------------->
-      <section class="subscribe section Contact" id="Contact">
+      <section class="subscribe section">
         <div class="subscribe_bg">
           <div class="subscribe_container container">
             <h2 class="sectionTitle subscribe_title">
@@ -353,7 +266,7 @@
     </main>
 
     <!----------- FOOTER --------------->
-    <footer class="footer section">
+    <footer class="footer section Contact" id="Contact">
       <div class="footer_container container grid">
         <div class="footer_content grid">
           <div class="footer_data">
@@ -457,12 +370,11 @@
     </a>
 
     <!----------- SCROLL REVEAL --------------->
-    <script src="./js/scrollreveal.min.js"></script>
+    <script src="./node_modules/scrollreveal/dist/scrollreveal.min.js"></script>
 
     <!----------- SWIPER JS --------------->
-    <!-- <script src="./node_modules/swiper/swiper-bundle.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.2.0/swiper-bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/2.0.0/scrollReveal.js"></script>
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+   
     <!----------- MAIN JS --------------->
     <script src="./js/main.js"></script>
   </body>
