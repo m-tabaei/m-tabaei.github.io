@@ -9,7 +9,7 @@ if (navToggle) {
   });
 }
 
-/*---------------- menu hiden ----------------*/
+/*---------------- menu hidden ----------------*/
 if (navClose) {
   navClose.addEventListener("click", () => {
     navMenu.classList.remove("show-menu");
@@ -29,7 +29,6 @@ navLink.forEach((n) => n.addEventListener("click", linkAction));
 /*---------------- Change background Image ----------------*/
 function scrollHeader() {
   const header = document.getElementById("header");
-  // When the scroll is greater than 30 viewport height, add the scroll-header class to the header tag
   if (this.scrollY >= 30) header.classList.add("scroll-header");
   else header.classList.remove("scroll-header");
 }
@@ -43,10 +42,11 @@ const root3 = document.querySelector(".root3");
 
 const fetchData = async () => {
   try {
-    const response = await fetch("https://api-storeg-emperial.vercel.app/slider");
+    const response = await fetch(
+      "https://api-storeg-emperial.vercel.app/slider"
+    );
     const data = await response.json();
     return data;
-    
   } catch (error) {
     const errorProduct = document.getElementById("Product");
     errorProduct.innerHTML = `<p>Error: ${error.message}</p>`;
@@ -84,8 +84,7 @@ fetchData().then((data) => {
   populateRoot3(data);
 });
 
-
-var swiper = new Swiper(".mySwiper", {
+const swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
   centeredSlides: true,
   autoplay: {
@@ -171,36 +170,6 @@ async function displayPlaceCards() {
 
 window.addEventListener("DOMContentLoaded", displayPlaceCards);
 
-/*---------------- Video ----------------*/
-const videoFile = document.getElementById("video-file");
-const videoButton = document.getElementById("video-button");
-const videoIcon = document.getElementById("video-icon");
-
-function playPause() {
-  if (videoFile.paused) {
-
-    videoFile.play();
-
-    videoIcon.classList.add("ri-pause-line");
-    videoIcon.classList.remove("ri-play-line");
-  } else {
-
-    videoFile.pause();
-
-    videoIcon.classList.remove("ri-pause-line");
-    videoIcon.classList.add("ri-play-line");
-  }
-}
-videoButton.addEventListener("click", playPause);
-
-function finalVideo() {
-
-  videoIcon.classList.remove("ri-pause-line");
-  videoIcon.classList.add("ri-play-line");
-}
-
-videoFile.addEventListener("ended", finalVideo);
-
 /*---------------- Show Scroll up ----------------*/
 function scrollUp() {
   const scrollUp = document.getElementById("scroll-up");
@@ -230,14 +199,12 @@ function scrollActive() {
         .querySelector(`.navMenu a[href="#${sectionId}"]`)
         .classList.remove("active-link");
     }
-    
   });
 }
 window.addEventListener("scroll", scrollActive);
 
-
-
 /*---------------- Scroll reveal Animation ----------------*/
+
 const sr = ScrollReveal({
   distance: "60px",
   duration: 2800,

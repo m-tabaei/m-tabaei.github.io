@@ -99,6 +99,7 @@ input {
   text-align: center;
   text-transform: capitalize;
   margin-bottom: var(--mb-2);
+  padding: 5px;
 }
 
 .container {
@@ -197,7 +198,6 @@ input {
   background-color: whitesmoke;
   box-shadow: 0 0 4px rgba(14, 55, 63, 0.15);
   font-weight: bolder;
-  
 }
 
 .scroll-header .nav_logo,
@@ -254,7 +254,6 @@ input {
 .homeinfo {
   color: var(--white-color);
   text-shadow: 5px 5px 1px black;
-  
 }
 
 .homeData-subtitle {
@@ -346,12 +345,6 @@ input {
   background: none;
 }
 
-/*------------- PRODUCT SWIPER ERROR -------------*/
-#Product{
-  text-align: center;
-  color: red;
-  font-size: 2.5 rem;
-}
 /*------------- ABOUT -------------*/
 .aboutData {
   text-align: center;
@@ -364,7 +357,6 @@ input {
 .about_description {
   margin-bottom: var(--mb-2);
   text-align: justify;
-
 }
 
 .about_img {
@@ -378,8 +370,6 @@ input {
   overflow: var(--img-hidden);
 }
 
-
-
 .about_img-two {
   width: 180px;
 }
@@ -392,15 +382,30 @@ input {
   transform: var(--img-scale);
 }
 
+/*------------- PRODUCT SWIPER ERROR -------------*/
+
+#Product h2 {
+  padding: 90px 0 24px 0;
+  text-align: center;
+}
+
+#Product p {
+  text-align: center;
+  color: red;
+  font-size: 2rem;
+  background-color: antiquewhite;
+}
+
 /*------------- PRODUCT CARD -------------*/
 .place_card,
 .place_img {
   height: 230px;
 }
-#error-container{
+#error-container {
   text-align: center;
   color: red;
-  font-size: 5px;
+  font-size: 2rem;
+  background-color: antiquewhite;
 }
 .place_container {
   grid-template-columns: repeat(2, max-content);
@@ -415,7 +420,6 @@ input {
 .place_card:hover .place_img {
   transform: var(--img-scale);
   filter: blur(8px);
-
 }
 
 .place_img {
@@ -425,7 +429,6 @@ input {
 .place_content,
 .place_title {
   color: white;
-
 }
 
 .place_content {

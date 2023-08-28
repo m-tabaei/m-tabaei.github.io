@@ -13,7 +13,12 @@
     />
 
     <!----------- SWIPER CSS --------------->
-    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
     <!----------- CSS --------------->
     <link rel="stylesheet" href="./css/styles.css" />
 
@@ -137,8 +142,10 @@
         </div>
       </section>
 
-      <!----------- SWIPER --------------->
+      <!----------- SWIPER Products--------------->
+
       <section id="Product">
+        <h2>Products</h2>
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide root1"></div>
@@ -151,17 +158,29 @@
         </div>
       </section>
 
+      <!----------- swiper js  --------------->
+      <!-- <div class="swiper mySwiper" id="Product">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="./img/swiper1.jpg" > </div>
+    <div class="swiper-slide"><img src="./img/swiper2.jpg" ></div>
+    <div class="swiper-slide"><img src="./img/swiper3.jpg" ></div>
+
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div> -->
+
       <!----------- PRODUCT --------------->
       <section class="place section">
         <h2 class="sectionTitle">Choose Your Speaker</h2>
         <div id="error-container"></div>
         <div class="place_container container grid"></div>
       </section>
-
+      
       <!----------- EXPERINCE --------------->
       <section class="experience section">
         <h2 class="sectionTitle">
-          Lorem ipsum dolor sit amet consectetur  <br />
+          Lorem ipsum dolor sit amet consectetur <br />
           lorem consectetur consectetur dolor sit amet consec
         </h2>
 
@@ -207,19 +226,15 @@
           </p>
 
           <div class="video_content">
-            <video id="video-file">
+            <video id="video-file" controls muted>
               <source src="./video/video.mp4" type="video/mp4" />
             </video>
-
-            <button class="button button--flex video_button" id="video-button">
-              <i class="ri-play-line video_button-icon" id="video-icon"></i>
-            </button>
           </div>
         </div>
       </section>
 
       <!----------- SUBSCRIBE --------------->
-      <section class="subscribe section">
+      <section class="subscribe section Contact" id="Contact">
         <div class="subscribe_bg">
           <div class="subscribe_container container">
             <h2 class="sectionTitle subscribe_title">
@@ -266,7 +281,7 @@
     </main>
 
     <!----------- FOOTER --------------->
-    <footer class="footer section Contact" id="Contact">
+    <footer class="footer section">
       <div class="footer_container container grid">
         <div class="footer_content grid">
           <div class="footer_data">
@@ -370,11 +385,12 @@
     </a>
 
     <!----------- SCROLL REVEAL --------------->
-    <script src="./node_modules/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="./js/scrollreveal.min.js"></script>
 
     <!----------- SWIPER JS --------------->
-    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
-   
+    <!-- <script src="./node_modules/swiper/swiper-bundle.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.2.0/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/2.0.0/scrollReveal.js"></script>
     <!----------- MAIN JS --------------->
     <script src="./js/main.js"></script>
   </body>
