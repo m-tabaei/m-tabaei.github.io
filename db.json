@@ -1,0 +1,59 @@
+{
+  "places": [
+    {
+      "id": 1,
+      "imgSrc": "/img/place1.jpg",
+      "rating": "4.8",
+      "title": "5540",
+      "subtitle": "lorem",
+      "price": "$2499"
+    },
+    {
+      "id": 2,
+      "imgSrc": "/img/place2.jpg",
+      "rating": "5.0",
+      "title": "7750",
+      "subtitle": "lorem",
+      "price": "$1599"
+    },
+    {
+      "id": 3,
+      "imgSrc": "/img/place3.jpg",
+      "rating": "4.9",
+      "title": "6670",
+      "subtitle": "lorem",
+      "price": "$3499"
+    },
+    {
+      "id": 4,
+      "imgSrc": "/img/place4.jpg",
+      "rating": "2.9",
+      "title": "6650",
+      "subtitle": "lorem",
+      "price": "$4399"
+    },
+    {
+      "id": 5,
+      "imgSrc": "/img/place5.jpg",
+      "rating": "3.9",
+      "title": "7750",
+      "subtitle": "lorem",
+      "price": "$4999"
+    },
+    {
+      "id": 6,
+      "imgSrc": "/img/place6.jpg",
+      "rating": "4.2",
+      "title": "2020",
+      "subtitle": "lorem",
+      "price": "$2980"
+    }
+  ],
+  "slider": [
+    {
+      "id1": "./img/swiper1.jpg",
+      "id2": "./img/swiper2.jpg",
+      "id3": "./img/swiper3.jpg"
+    }
+  ]
+}
